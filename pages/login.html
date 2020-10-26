@@ -1,0 +1,27 @@
+
+<div class="container  mt-4">  
+    <div class="row justify-content-md-center">
+        <div class="col-md-5">
+            <div class="card text-center my-4"  >
+                <div class="card-body">
+                   
+                    <form class="form-signin" ng-submit="login()" novalidate>
+                        <img class="card-img-top unoCard my-3" src="images/uno.png" alt="uno"> 
+                        <h5 class=" mb-3 font-weight-normal">Please sign in</h5>Hi {{message}}
+                        <!-- <label for="inputEmail">Email address</label> -->
+                        <input type="email" id="inputEmail" ng-model="formData.loginEmail" class="form-control mb-2" placeholder="Email address" required autofocus>
+                        <!-- <label for="inputPassword">Password</label> -->
+                        <input type="password" id="inputPassword" ng-model="formData.loginPassword" class="form-control mb-2" placeholder="Password" required>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-warning btn-block" type="submit">Sign in</button>
+                        <p class="mt-5 mb-3 text-muted">&copy; AHA! 2020</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

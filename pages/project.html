@@ -1,0 +1,78 @@
+<div class="container mt-4 mb-4">
+  <div class="card mx-2">
+    <h2 class="text-center mt-4">AngularJS Project <i class="fas fa-feather-alt"></i></h2>
+    <form name="myForm" class="form-horizontal mt-4 ml-4 mb-4" 
+        ng-disabled="disableForm" ng-hide="hideForm" ng-submit="addRecord(myForm)" novalidate>
+        {{formData.fName}}
+        <div class="form-group row mt-2" >
+          <label class="control-label col-sm-2" for="fName" ng-disabled="disableForm">
+            First Name:
+          </label> 
+          <input type="text" class="form-control col-md-6" name="fName" ng-model="newRecord.fName" value=""
+            placeholder="Enter your First name" title="Enter First Name" ng-disabled="disableForm" autofocus required>
+            <div class="text-danger small ml-2">
+              <span ng-show="myForm.fName.$invalid && (myForm.fName.$dirty || myForm.$submitted)">Please enter your First Name</span>
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+          <label class="control-label col-sm-2" for="lName" ng-disabled="disableForm">
+            Last Name:
+          </label>
+          <input type="text" class="form-control col-md-6" name="lName" ng-model="newRecord.lName" value=""
+            placeholder="Enter your Last name" title="Enter your Last name" ng-disabled="disableForm">
+        </div>
+        <div class="form-group row  mt-2">
+          <label class="control-label col-sm-2" for="email" ng-disabled="disableForm">
+            Email:
+          </label>
+          <input type="email" class="form-control col-md-6" name="email" ng-model="newRecord.email" value=""
+            placeholder="Enter your email" ng-disabled="disableForm" required>
+            <div class="text-danger small ml-2">
+              <span ng-show="myForm.email.$invalid && (myForm.email.$dirty || myForm.$submitted)">
+                  <span ng-show="myForm.email.$error.required">Please enter an e-mail.</span>
+                  <span ng-show="myForm.email.$error.email">Please enter a valid email.</span>
+              </span>
+            </div>
+            
+        </div> 
+        <!-- <span>Value: {{myForm | json }}</span> -->
+        <hr>
+        <button type="submit" class="btn btn-warning" ng-click="resetForm()" ng-disabled="disableForm">Reset</button>
+        <button type="submit" class="btn btn-warning" ng-disabled="disableForm">Submit</button>
+
+    </form>
+
+    <!-- Display Table -->
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered ">
+        <thead>
+          <tr>
+            <th>
+            </th>
+            <th>
+              Firstname
+            </th>
+            <th>
+              Lastname
+            </th>
+            <th>
+              Email
+            </th>
+            <th>
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="record in list track by $index">
+          <td>{{$index+1}}</td>
+          <td>{{record.fName}}</td>
+          <td>{{record.lName}}</td>
+          <td>{{record.email}}</td>
+          <td><button class="btn btn-dark btn-sm" ng-click=deleteRecord($index+1)>Delete</button></td>
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</div>

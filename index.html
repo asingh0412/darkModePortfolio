@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio/Tutorial">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript,AngularJS, angularjs, java">
+    <meta name="author" content="Amaninder Singh">
+
+    <title>Amaninder's Portfolio</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+</head>
+<body ng-app="app" >
+    <div class="containter">
+
+        <!-- ng switch -->
+        <!-- <div ng-include src="'pages/topNav.html'"></div> -->
+        <nav class="navbar navbar-light navbar-expand-lg navbar-custom" id="myAppNav">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand navbar-custom" href="#">
+            <img src="images/uno-logo.png" border-radius="25px" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+              <span class="name">Amaninder Singh</span>
+          </a>
+          <span class="navbar-text ml-4">
+            <span class="long-text">
+              Full Stack Web Developer
+                <small>(Java <i class="fab fa-java"></i>
+              and AngularJS <i class="fab fa-angular"></i>)</small>
+            </span>  
+            <span class="short-text">
+              <!-- Full Stack Web Developer -->
+            </span>  
+          </span>
+        
+          <!-- Dark Mode Button -->
+          <div class="custom-control custom-switch ml-4">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#!home"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!about"><i class="fas fa-feather"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!project"><i class="fab fa-angular"></i>ng-Project</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+
+        <div id="main" class="">
+            <!-- This is where content will be injected -->
+            <div ng-view></div>
+      </div>
+
+    </div><!-- Container ends-->
+
+    <!-- Bootstrap Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+    <!-- Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+    <!-- Dark Mode JS -->
+    <script src="dark-mode-switch.js"></script>
+
+    <script src="scripts/"></script>
+    <script src="controllers/myAppCtrl.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/aboutController.js"></script>
+    <script src="controllers/projectController.js"></script>
+</body>
+</html>

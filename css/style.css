@@ -1,0 +1,56 @@
+body{
+    background-color: #f8f8f8;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #212529;
+}
+
+.nav-text{
+  color:  #212529;
+}
+
+#infoCard{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+.infoCardImage{
+    border-radius: 35%;
+    width: 200px;
+    /* height: 200px; */
+}
+
+.unoCard{
+  border-radius: 25%;
+  width: 100px;
+  height: 100px;
+}
+.name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  @media (min-width:800px){
+    .zip-container{
+      padding-left: 80px;
+    }
+  }
+  
+  .short-text{
+    display: none;
+  }
+  @media (max-width:650px){
+    .short-text{
+      display: inline-block;
+    }
+    .long-text{
+      display: none;
+    }
+  }

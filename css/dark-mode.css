@@ -1,0 +1,80 @@
+[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #303030;
+  border: 1px solig rgba(0, 0, 0, 0.125);
+}
+
+[data-theme="dark"] .h1-text {
+  background-color: #303030;
+  color: #ececda;
+}
+
+[data-theme="dark"] .navbar-brand {
+  color: #ececda
+}
+
+[data-theme="dark"] .navbar-text {
+  color: #ececda;
+}
+[data-theme="dark"] .navbar-item {
+  color: #ececda;
+}
+[data-theme="dark"] .navbar-toggler {
+  color: #ececda;
+}
+[data-theme="dark"] .form-control{
+  background-color: #303030;
+  color: #ececda;
+  
+}
+[data-theme="dark"] .jumbotron{
+  background-color: #303030;
+  color: #ececda;
+}
+
+/* change the link color */
+[data-theme="dark"] .navbar-nav .nav-item .nav-link {
+  color: #ececda;
+}
+
+[data-theme="dark"] .table{
+  background-color: #303030;
+  color: #ececda;
+}
+
+[data-theme="dark"] .navbar-toggle-icon{
+  background-color: yellow;
+  color: #ececda;
+}
+
+
+/* change the brand and text color
+.navbar .navbar-brand,
+.navbar .navbar-text {
+    color: pink;
+}
+/* change the link color */
+/* [data-theme="dark"].navbar-nav .nav-item .nav-link {
+  color: #ececda;
+} */
+/* change the color of active or hovered links */
+/* .navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: pink;
+} */ 

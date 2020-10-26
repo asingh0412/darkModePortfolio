@@ -1,0 +1,25 @@
+OOP- object oriented programming is about creating 'objects' that contains both data and methods.
+Class is 'Fruit' for example and its objects could be Apple, Banana, Mango.
+So which means a class is like an 'object constructor' or a 'template' or 'blueprint' for creating objects.
+Also, an object is an 'instance' of a class. Anything which is having a state and behaviour is Object.
+An object is an abstract data type with the addition of polymorphism and inheritance.
+In java, object is created to call the non-static functions which are not present inside the main method but present inside the class.
+
+Example : Let say you are having a party, but some snacks are not there and you can’t left the party, so you call someone(suppose x) to get the snacks. So, in this case that Mr. x is Object whom you have called to get things that are not present inside.
+In LAP case, we have LAPDao to get the data base calls.
+Same as in Java, While executing .class file JVM will load the Main method and starts implementing it and if any non-static function is not inside main method but we need that function. So, in that case we will create Object to access that function which is inside the Class but not inside the Main Method.
+
+Static vs Non-static
+When you create a 'static' method, which means that it can be accessed without creating an object of the class, unlike public, which can only be accessed by object. Static:attributes and methods belongs to the class, rather than an object.
+
+access Modifiers --> Public, private, protected.
+Non-access modifiers --> final, static, abstract.
+
+Abstract: An abstract method belongs to an abstract class. and it does not have a body. The body is provided by the subclass.
+
+
+Questions:
+why use static?
+Why constructor?
+When do you use abstract class?
+the bean tag in spring.xml like the property is being set as MRF. Example from LAP
